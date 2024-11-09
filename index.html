@@ -13,28 +13,34 @@
     <div id="side-form">
         <h1>Welcome to HackerForum</h1>
         <h2>where code breaks chains, knowledge is power, and legends are born.</h2> 
-        <p>Step in, if you’re ready to leave the ordinary behind.</p>
-        <form action="">
-            <label for="firstName"></label>
-            <input type="text" name="firstName" id="firstName">
+        <p class="para">Step in, if you’re ready to leave the ordinary behind.</p>
 
-            <label for="lastName"></label>
-            <input type="text" name="lastName" id="lastName">
+        <h3>Let's do this</h3>
+        <form action="" id="form">
+            <div class="col-1">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" required placeholder="John">
 
-            <label for="email"></label>
-            <input type="email" name="email" id="email">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
 
-            <label for="tel"></label>
-            <input type="tel" name="tel" id="tel">
+                <label for="password">Password</label>
+            <input type="password" name="password" id="password" required placeholder="123456">
+            </div>
 
-            <label for="password"></label>
-            <input type="password" name="password" id="password">
+            <div class="col-2">
+                <label for="lastName">Last Name (Optional)</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Smith"> 
 
-            <label for="confirmPassword"></label>
-            <input type="password" name="confirmPassword" id="confirmPassword">
+                <label for="tel">Telephone Number (Optional)</label>
+                <input type="tel" name="tel" id="tel" placeholder="0898957412" pattern="[0-9]*">
 
-            <button type="submit">Create Account</button>
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" required placeholder="123456">
+            </div>
         </form>
+
+        <button form="form" type="submit">Create Account</button>
 
         <p>Already have an account? <a href="#">Log in</a></p>
     </div>
