@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'BRACKISH'; /* Name your font family */
+    src: url('BRACKISH.TTF'); /* Locate the .ttf file within your directory*/
+  }
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    color: white;
+    font-family: 'BRACKISH';
+}
+
+#side-image {
+    background-image: url(neo-taiga.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33%;
+}
+
+#side-form {
+    background-color: rgb(12, 12, 12);
+    flex: 1;
+}
+
+#logo {
+    color: white;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+    top: 40%;
+    padding: 10px;
+}
